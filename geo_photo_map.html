@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cf02f28feee285b5baf6d70d0434a22d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cf02f28feee285b5baf6d70d0434a22d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cf02f28feee285b5baf6d70d0434a22d = L.map(
+                "map_cf02f28feee285b5baf6d70d0434a22d",
+                {
+                    center: [40.748817, -73.985428],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d4e49ff408eaf40adbb8cf38e1ed83e6 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d4e49ff408eaf40adbb8cf38e1ed83e6.addTo(map_cf02f28feee285b5baf6d70d0434a22d);
+        
+    
+            var marker_17928fe7e07d22c6678324afe0a93fa3 = L.marker(
+                [40.748817, -73.985428],
+                {
+}
+            ).addTo(map_cf02f28feee285b5baf6d70d0434a22d);
+        
+    
+            var icon_52a03bd0341ea4a77db4983dfe1fcfdf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1ba194996310c0aef0eed71399fdbbca = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_c72c85542de822ea22291f13df762d09 = $(`<div id="html_c72c85542de822ea22291f13df762d09" style="width: 100.0%; height: 100.0%;"> <div style='text-align:center;'>   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_Cropped.jpg/800px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_Cropped.jpg" style="max-width:50vw;max-height:40vh;border-radius:6px;">   <p style="margin:4px 0 0;font-weight:600;">Empire State Building</p> </div> </div>`)[0];
+                popup_1ba194996310c0aef0eed71399fdbbca.setContent(html_c72c85542de822ea22291f13df762d09);
+            
+        
+
+        marker_17928fe7e07d22c6678324afe0a93fa3.bindPopup(popup_1ba194996310c0aef0eed71399fdbbca)
+        ;
+
+        
+    
+    
+            marker_17928fe7e07d22c6678324afe0a93fa3.bindTooltip(
+                `<div>
+                     
+<div style='text-align:center;'>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_Cropped.jpg/800px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_Cropped.jpg" style="max-width:50vw;max-height:40vh;border-radius:6px;">
+  <p style="margin:4px 0 0;font-weight:600;">Empire State Building</p>
+</div>
+
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+                marker_17928fe7e07d22c6678324afe0a93fa3.setIcon(icon_52a03bd0341ea4a77db4983dfe1fcfdf);
+            
+    
+            var marker_c1a8c08da125aa918748b510cd0573ef = L.marker(
+                [47.620422, -122.349358],
+                {
+}
+            ).addTo(map_cf02f28feee285b5baf6d70d0434a22d);
+        
+    
+            var icon_4b2f0b35040f22808eb2b088e881ea38 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_06394dc45c44eecc6ce54b1792befc12 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_7b33cb93d27ec6c872d247634a0daee8 = $(`<div id="html_7b33cb93d27ec6c872d247634a0daee8" style="width: 100.0%; height: 100.0%;"> <div style='text-align:center;'>   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Space_Needle_2011-07-04.jpg/960px-Space_Needle_2011-07-04.jpg" style="max-width:50vw;max-height:40vh;border-radius:6px;">   <p style="margin:4px 0 0;font-weight:600;">Space Needle</p> </div> </div>`)[0];
+                popup_06394dc45c44eecc6ce54b1792befc12.setContent(html_7b33cb93d27ec6c872d247634a0daee8);
+            
+        
+
+        marker_c1a8c08da125aa918748b510cd0573ef.bindPopup(popup_06394dc45c44eecc6ce54b1792befc12)
+        ;
+
+        
+    
+    
+            marker_c1a8c08da125aa918748b510cd0573ef.bindTooltip(
+                `<div>
+                     
+<div style='text-align:center;'>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Space_Needle_2011-07-04.jpg/960px-Space_Needle_2011-07-04.jpg" style="max-width:50vw;max-height:40vh;border-radius:6px;">
+  <p style="margin:4px 0 0;font-weight:600;">Space Needle</p>
+</div>
+
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+                marker_c1a8c08da125aa918748b510cd0573ef.setIcon(icon_4b2f0b35040f22808eb2b088e881ea38);
+            
+    
+            var marker_e133f2020f15ecb5b16345578f418bcf = L.marker(
+                [13.7435, 100.489],
+                {
+}
+            ).addTo(map_cf02f28feee285b5baf6d70d0434a22d);
+        
+    
+            var icon_412ab1f52eecf6976ebed4c2768c7349 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3a936cc5617df8e4cd402d340e9914d3 = L.popup({
+  "maxWidth": "auto",
+});
+
+        
+            
+                var html_018909ed7a3cad2ba7693a760097302a = $(`<div id="html_018909ed7a3cad2ba7693a760097302a" style="width: 100.0%; height: 100.0%;"> <div style='text-align:center;'>   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%A3%E0%B8%B8%E0%B8%932.jpg/2560px-%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%A3%E0%B8%B8%E0%B8%932.jpg" style="max-width:50vw;max-height:40vh;border-radius:6px;">   <p style="margin:4px 0 0;font-weight:600;">Wat Arun</p> </div> </div>`)[0];
+                popup_3a936cc5617df8e4cd402d340e9914d3.setContent(html_018909ed7a3cad2ba7693a760097302a);
+            
+        
+
+        marker_e133f2020f15ecb5b16345578f418bcf.bindPopup(popup_3a936cc5617df8e4cd402d340e9914d3)
+        ;
+
+        
+    
+    
+            marker_e133f2020f15ecb5b16345578f418bcf.bindTooltip(
+                `<div>
+                     
+<div style='text-align:center;'>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%A3%E0%B8%B8%E0%B8%932.jpg/2560px-%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%A3%E0%B8%B8%E0%B8%932.jpg" style="max-width:50vw;max-height:40vh;border-radius:6px;">
+  <p style="margin:4px 0 0;font-weight:600;">Wat Arun</p>
+</div>
+
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+                marker_e133f2020f15ecb5b16345578f418bcf.setIcon(icon_412ab1f52eecf6976ebed4c2768c7349);
+            
+    
+            tile_layer_d4e49ff408eaf40adbb8cf38e1ed83e6.addTo(map_cf02f28feee285b5baf6d70d0434a22d);
+        
+    
+                marker_17928fe7e07d22c6678324afe0a93fa3.setIcon(icon_52a03bd0341ea4a77db4983dfe1fcfdf);
+            
+    
+                marker_c1a8c08da125aa918748b510cd0573ef.setIcon(icon_4b2f0b35040f22808eb2b088e881ea38);
+            
+    
+                marker_e133f2020f15ecb5b16345578f418bcf.setIcon(icon_412ab1f52eecf6976ebed4c2768c7349);
+            
+</script>
+</html>
