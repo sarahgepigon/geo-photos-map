@@ -20,7 +20,8 @@ The goal was to do a minimal experiment with data visualization with Python (usi
 ## 🖼️ Current Limitations
 
 - ⚠️ UI has no user instructions or legend.
-- Zoomed in on NYC. To change to zoom out so it dynamicalliy shows the map zoomed out enough to show all markers.
+- ⚠️ Zoomed in on NYC. To change to zoom out so it dynamicalliy shows the map zoomed out enough to show all markers.
+- ⚠️ Placeholder photos from Wikipedia. 
 
 ---
 
